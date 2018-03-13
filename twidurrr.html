@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twidurrr</title>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		body {
+			font-family: "Helvetica Neue";
+			box-sizing: border-box;
+			font-size: 13px;
+			font-weight: 700;
+			color: #555555;
+		}
+
+		#navbar {
+			background-color: #FFEEEE;
+			border-top: 3px solid green;
+		}
+
+		#left-sidebar {
+			background-color: #E2ECF0;
+		}
+
+		#center {
+			padding-top: 5px;
+			background-color: #E2ECF0;
+		}
+
+		#right-sidebar {
+			background-color: #E2ECF0;
+		}
+
+		#footer {
+			background-color: #FFEEEE;
+		}
+
+		.post-image {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+
+		.post {
+			background-color: #FFFFFF;
+			border-bottom: 1px solid #E2ECF0;
+			padding: 5px;
+		}
+
+		.post:hover {
+			border-left: 2px solid lightgray;
+		}
+
+		#navbar-ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.navbar-li {
+			display: inline-block;
+			padding-right: 40px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			line-height: 30px;
+		}
+
+		.fa-earlybirds {
+			color: green;
+			font-size: 30px;
+		}
+
+		.profile-image {
+			margin-top: -150px;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border: 5px solid #FFEEEE;
+		}
+
+		.profile-info {
+			margin-top: 5px;
+			background-color: white;
+			padding: 5px;
+		}
+
+		.profile-info-ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#profile-info-name {
+			font-size: 20px;
+		}
+
+		#profile-info-handle {
+			color: blue;
+		}
+
+		#homepage-title {
+			font-family: Lobster, cursive;
+			color: green;
+			font-size: 20px;
+			padding-right: 5px;
+		}
+
+		.profile-category {
+			color: #222222;
+		}
+
+		.options-ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			background-color: #FFFFFF;
+			width: 100%;
+			padding-left: 10px;
+		}
+
+		.options-li {
+			display: inline-block;
+			padding-left: 5px;
+			padding-right: 10px;
+		}
+
+		.options-li:hover {
+			color: red;
+			cursor: pointer;
+		}
+
+		.options {
+			background-color: #FFFFFF;
+		}
+
+		.cover-photo {
+			background-image: url(http://en.treealerts.org/wp-content/uploads/2013/07/Arctic-landscape-cc-Paul-2007-big.jpg);
+			height: 300px;
+		}
+
+		#icon-li {
+			padding-right: 10px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="navbar" class="col-12">
+				<ul id="navbar-ul">
+					<li class="navbar-li" id="icon-li"><i class="fab fa-earlybirds"></i> <span id="homepage-title">Twidurrrrrr</span></li>
+					<li class="navbar-li"><a href="https://google.com">Home</a></li>
+					<li class="navbar-li"><a href="https://google.com">Posts</a></li>
+					<li class="navbar-li"><a href="https://google.com">Profile</a></li>
+					<li class="navbar-li"><a href="https://google.com">Notifications</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row cover-photo">
+
+		</div>
+
+		<div id="main-content" class="row">
+			<div id="left-sidebar" class="col-3">
+				<div class="profile-image-container"><img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2hJHPO0sj3cTU-UqYcGxQ9tbw7jE4Aj-EuHezoQCAjdbUQQscRg"></div>
+				<div class="profile-info">
+					<ul class="profile-info-ul">
+						<li id="profile-info-name" class="profile-info-li">Arctic Tern</li>
+						<li id="profile-info-handle" class="profile-info-li">@arctictern</li>
+						<li class="profile-info-li"><span class="profile-category">Location:</span> Svalbard, Norway</li>
+						<li class="profile-info-li"><span class="profile-category">Interests:</span> Birding it up, nesting, eating fish</li>
+					</ul>
+				</div>
+			</div>
+			<div id="center" class="col-6">
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pacific_walrus_bull_odobenus_rosmarus.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Walrus @walrus - 3/6/2018</p>
+						<p>Sorry fishy. #super_yummmm #sorrynotsorry</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpe4wDZN6E2zU3aDxvWugdbqeQM8ZEL3Thj7jteWDbwVP5oSbFw">
+					</div>
+					<div class="col-9 text-side">
+						<p>Fish @fish - 3/6/2018</p>
+						<p>Got eaten. Today sucks. #antiyummmm</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pacific_walrus_bull_odobenus_rosmarus.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Walrus @walrus - 3/6/2018</p>
+						<p>Caught a fish, it's a pretty good fish. #yummmm</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pacific_walrus_bull_odobenus_rosmarus.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Walrus @walrus - 3/6/2018</p>
+						<p>Caught a fish, it's a pretty good fish. #yummmm</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pacific_walrus_bull_odobenus_rosmarus.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Walrus @walrus - 3/6/2018</p>
+						<p>Caught a fish, it's a pretty good fish. #yummmm</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+
+				<div class="post row">
+					<div class="col-3 img-side">
+						<img class="post-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pacific_walrus_bull_odobenus_rosmarus.jpg">
+					</div>
+					<div class="col-9 text-side">
+						<p>Walrus @walrus - 3/6/2018</p>
+						<p>Caught a fish, it's a pretty good fish. #yummmm</p>
+					</div>
+					<ul class="options-ul">
+						<li class="options-li"><i class="far fa-comment"></i> Comment</li>
+						<li class="options-li"><i class="far fa-heart"></i> Like</li>
+						<li class="options-li"><i class="fas fa-retweet"></i> Retweet</li>
+					</ul>
+				</div>
+			</div>
+			<div id="right-sidebar" class="col-3">
+				<p>This is my right-sidebar</p>
+			</div>
+		</div>
+		<div class="row">
+			<div id="footer" class="col-12">
+				<i class="far fa-heart"></i> This is the footer.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
